@@ -7,11 +7,11 @@ import { Experience } from '@/components/sections/experience';
 import { Skills } from '@/components/sections/skills';
 import { Portfolio } from '@/components/sections/portfolio';
 import { Testimonials } from '@/components/sections/testimonials';
-import { Blog } from '@/components/sections/blog';
 import { Contact } from '@/components/sections/contact';
 import { Footer } from '@/components/sections/footer';
 import { NavBar } from '@/components/navbar';
 import portfolioData from '@/lib/portfolioData';
+import { Blogs } from '@/components/sections/blogs';
 
 export default function Home() {
   const [scrolling, setScrolling] = useState(false);
@@ -34,7 +34,7 @@ export default function Home() {
       <Skills data={portfolioData} />
       <Portfolio data={portfolioData} />
       <Testimonials data={portfolioData} />
-      <Blog />
+      <Blogs />
       <Contact data={portfolioData} />
       <Footer data={portfolioData} />
     </main>

@@ -156,6 +156,15 @@
     }
   }
 
+  .hide-scrollbar {
+  -ms-overflow-style: none;   /* IE/Edge */
+  scrollbar-width: none;      /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
+}
+
   .animate-fade-in {
     animation: fade-in 0.6s ease-in-out;
   }
@@ -184,3 +193,53 @@
     animation-delay: 1000ms;
   }
 }
+
+/* so i pasted the log from cloudfare for an AI and it suggested i run "pnpm install", after i ran it, come and see how much red lines in my codes.
+
+
+
+Then i ran "npm install"
+
+
+
+See the response, what do i do that'll fix everything now?
+
+
+
+npm run dev
+
+> my-project@0.1.0 dev
+
+> next dev
+
+node:internal/modules/cjs/loader:1424
+
+  throw err;
+
+  ^
+
+Error: Cannot find module 'C:\Users\HP\Desktop\Abdulbasit\nextjs\my-portfolio\node_modules\next\dist\bin\next'
+
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+
+    at node:internal/main/run_main_module:33:47 {
+
+  code: 'MODULE_NOT_FOUND',
+
+  requireStack: []
+
+}
+
+Node.js v24.11.1 */

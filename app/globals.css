@@ -201,6 +201,15 @@
   }
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none;   /* IE/Edge */
+  scrollbar-width: none;      /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
+}
+
 .animate-in.slide-in-from-bottom {
   animation: slideInFromBottom 0.6s ease-out forwards;
 }

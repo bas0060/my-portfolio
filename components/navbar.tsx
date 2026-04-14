@@ -1,8 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { PortfolioData } from '@/lib/portfolioData';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from '@/components/ui/sheet';
 
 interface NavBarProps {
   scrolling: boolean;
@@ -17,6 +23,18 @@ export function NavBar({ scrolling, data }: NavBarProps) {
     element?.scrollIntoView({ behavior: 'smooth' });
     setMobileMenuOpen(false);
   };
+
+  // Prevent scrolling when sheet is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
 
   const navItems = [
     { label: 'About', id: 'about' },
@@ -60,30 +78,31 @@ export function NavBar({ scrolling, data }: NavBarProps) {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-foreground hover:text-accent transition-colors"
-        >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+          <SheetTrigger asChild>
+            <button className="md:hidden text-foreground hover:text-accent transition-colors">
+              <Menu className="w-6 h-6" />
+            </button>
+          </SheetTrigger>
+          <SheetContent
+            side="right"
+            className="w-[70%] bg-background/80 backdrop-blur-md border-l border-muted/30 pl-6"
+          >
+            <div className="flex flex-col gap-4 mt-12">
+              {navItems.map((item) => (
+                <SheetClose asChild key={item.id}>
+                  <button
+                    onClick={() => scrollToSection(item.id)}
+                    className="text-foreground hover:text-accent transition-colors text-left py-2 text-lg font-medium"
+                  >
+                    {item.label}
+                  </button>
+                </SheetClose>
+              ))}
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-muted">
-          <div className="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-4">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-accent transition-colors text-left py-2"
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
     </nav>
   );
 }
