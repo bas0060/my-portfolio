@@ -80,7 +80,7 @@ const portfolioData: PortfolioData = {
     email: "adelekemakinde64@gmail.com",
     phone: "+234 906 402 8886",
     location: "Lagos, Nigeria",
-    bio: "Passionate about building beautiful, performant web experiences. 5+ years of experience with React, Node.js, and modern web technologies.",
+    bio: "Driven by a passion for crafting beautiful and high-performance web experiences, I bring 3+ years of hands-on experience with React, Node.js, and the latest web technologies.",
     socialLinks: [
       {
         id: 1,
@@ -108,7 +108,8 @@ const portfolioData: PortfolioData = {
       },
     ],
   },
-  about: "I'm a passionate Frontend Developer with over 5 years of experience building beautiful, performant web applications. Specializing in React, TypeScript, and modern web technologies, I focus on creating seamless user experiences and writing clean, maintainable code. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
+  about: "I'm a passionate Frontend Developer with over 3 years of experience building beautiful, performant web applications. I specialize in implementing responsive, user-friendly interfaces that prioritize performance and accessibility. With a strong foundation in JavaScript and a keen eye for design, I’m dedicated to creating seamless digital experiences that delight users and drive business success. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
+  // about: "I'm a passionate Frontend Developer with over 5 years of experience building beautiful, performant web applications. Specializing in React, TypeScript, and modern web technologies, I focus on creating seamless user experiences and writing clean, maintainable code. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
   education: [
     {
       id: 1,
