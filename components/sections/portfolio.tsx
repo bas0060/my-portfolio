@@ -39,7 +39,9 @@ export function Portfolio({ data }: PortfolioProps) {
                     src={project.image} 
                     alt={project.name} 
                     fill 
-                    className="object- absolute inset-0 w-full h-full" />
+                    className="object-cover absolute inset-0 w-full h-full" 
+                    priority={index === 0}
+                  />
                 </div>
 
                 {/* Project Content */}
@@ -56,7 +58,7 @@ export function Portfolio({ data }: PortfolioProps) {
                     {project.technologies.map((tech, i) => (
                       <span
                         key={i}
-                        className="text-xs px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/30"
+                        className="text-xs px-3 py-1 rounded-full bg-accent/10 text-white border border-accent/30"
                       >
                         {tech}
                       </span>
