@@ -9,14 +9,14 @@ interface ExperienceProps {
 
 export function Experience({ data }: ExperienceProps) {
   return (
-    <section id="experience" className="py-20 px-6 bg-gradient-to-b from-background/50 to-background">
+    <section id="experience" className="py-20 px-6 bg-linear-to-b from-background/50 to-background">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Experience <span className="text-accent">&amp; Journey</span>
             </h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full" />
+            <div className="h-1 w-20 bg-linear-to-r from-primary to-accent rounded-full" />
           </div>
         </ScrollReveal>
 

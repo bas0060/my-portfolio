@@ -2,6 +2,10 @@
 
 
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import Ecommerce from '@/public/velora-Ecommerce.png'
+import weather from '@/public/weather-checking-application.png'
+import kredgift from '@/public/kredgift-hero-section.png'
+import checkslate from '@/public/checkslate-hero-section.png'
 
 
 export interface PortfolioData {
@@ -47,7 +51,7 @@ export interface PortfolioData {
     id: number;
     name: string;
     description: string;
-    image: string;
+    image: any;
     technologies: string[];
     links: {
       github?: string;
@@ -60,7 +64,7 @@ export interface PortfolioData {
     role: string;
     company: string;
     message: string;
-    image?: string;
+    image?: any;
   }>;
   contact: {
     message: string;
@@ -198,7 +202,7 @@ const portfolioData: PortfolioData = {
       id: 1,
       name: "E-Commerce Platform",
       description: "A full-stack shopping application built with React and TypeScript, integrated with RESTful APIs. The platform features a dynamic product catalog, wishlist, cart, and checkout system integrated with Paystack for secure payments. Customers can track their order history, improving user experience by enabling smooth navigation through a variety of e-commerce functionalities. The app ensures secure transactions and provides a seamless shopping experience.",
-      image: "/velora-Ecommerce.png",
+      image: Ecommerce,
       technologies: ["React", "Tailwind CSS", "JavaScript", "Context API", "React Query", "OAuth 2.0 / JWT", "Paystack Integration"],
       links: {
         github: "https://github.com/bas0060/Velora-E-commerce",
@@ -209,7 +213,7 @@ const portfolioData: PortfolioData = {
       id: 2,
       name: "Weather Checker",
       description: "A React-based weather application that leverages the OpenWeather API to provide real-time weather updates. It features geolocation support, a 5-day forecast, and dynamic icons that visually represent the weather conditions. The app also caches weather data locally for faster retrieval on subsequent visits, improving the overall user experience and responsiveness.",
-      image: "/weather-checking-application.png",
+      image: weather,
       technologies: ["React", "JavaScript", "OpenAI API", "Tailwind CSS", "Git & GitHub", "Context API"],
       links: {
         github: "https://github.com/bas0060/weather-app",
@@ -220,7 +224,7 @@ const portfolioData: PortfolioData = {
       id: 3,
       name: "checkslate",
       description: "A two-sided marketplace designed for customers and service providers, built with React. This platform enables users to book and schedule services with ease, while providing service providers with comprehensive dashboards to manage their schedules, clients, and earnings. It ensures both parties enjoy a smooth, user-friendly experience, allowing for easy interactions and bookings.",
-      image: "/checkslate-hero-section.png",
+      image: checkslate,
       technologies: ["Git & GitHub", "RESTful APIs / Axios ", "JavaScript", "React", "Tailwind CSS",],
       links: {
         github: "https://github.com/Aarif195/Checkslate/",
@@ -231,7 +235,7 @@ const portfolioData: PortfolioData = {
       id: 4,
       name: "Giftcard Trading Platform",
       description: "A platform for buying, selling, and trading gift cards, with secure user authentication, real-time transaction processing, and efficient user dashboards for tracking trade history. Integrated with payment gateways for secure financial transactions, this platform aims to create a trusted marketplace for gift card trading with seamless user experience and robust security.",
-      image: "/kredgift-hero-section.png",
+      image: kredgift,
       technologies: ["JavaScript", "React", "Tailwind CSS", "Git & GitHub", "RESTful APIs / Axios "],
       links: {
         github: "https://github.com/KredGift01/kredgift-frontend/",

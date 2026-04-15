@@ -39,7 +39,7 @@ export function Portfolio({ data }: PortfolioProps) {
                     src={project.image} 
                     alt={project.name} 
                     fill 
-                    className="object-cover absolute inset-0 w-full h-full" 
+                    className="absolute inset-0 w-full h-full" 
                     priority={index === 0}
                   />
                 </div>
