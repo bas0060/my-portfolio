@@ -4,13 +4,13 @@ import { useEffect } from 'react';
 
 export function PerformanceMonitor() {
   useEffect(() => {
-    // Web Vitals monitoring
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(console.log);
-      getFID(console.log);
-      getFCP(console.log);
-      getLCP(console.log);
-      getTTFB(console.log);
+    // web-vitals v3+ API
+    import('web-vitals').then(({ onCLS, onFCP, onLCP, onTTFB, onINP }) => {
+      onCLS(console.log);
+      onFCP(console.log);
+      onLCP(console.log);
+      onTTFB(console.log);
+      onINP(console.log); // replaces getFID in v3+
     });
 
     // Performance observer for navigation timing
@@ -29,7 +29,6 @@ export function PerformanceMonitor() {
       });
 
       observer.observe({ entryTypes: ['navigation'] });
-
       return () => observer.disconnect();
     }
   }, []);
