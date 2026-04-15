@@ -2,10 +2,11 @@ import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { AnimationProvider } from '@/components/animation-provider'
+import { PerformanceMonitor } from '@/components/performance-monitor'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const geist = Geist({ subsets: ["latin"] });
+const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Abdulbasit Makinde | Frontend Developer',
@@ -54,7 +55,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-sans antialiased bg-background text-foreground">
+      <body className={`${geist.className} antialiased bg-background text-foreground`}>
+        <PerformanceMonitor />
         <AnimationProvider>
           {children}
         </AnimationProvider>
