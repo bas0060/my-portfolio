@@ -44,7 +44,7 @@ export function Experience({ data }: ExperienceProps) {
                       {job.technologies.map((tech, i) => (
                         <span
                           key={i}
-                          className="text-xs px-3 py-1 rounded-full bg-primary/20 text-white border border-primary/30"
+                          className="text-xs px-3 py-1 rounded-full bg-slate-800 text-white border border-primary/30"
                         >
                           {tech}
                         </span>

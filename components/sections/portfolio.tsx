@@ -58,7 +58,7 @@ export function Portfolio({ data }: PortfolioProps) {
                     {project.technologies.map((tech, i) => (
                       <span
                         key={i}
-                        className="text-xs px-3 py-1 rounded-full bg-accent/10 text-white border border-accent/30"
+                        className="text-xs px-3 py-1 rounded-full bg-slate-800 text-white border border-accent/30"
                       >
                         {tech}
                       </span>
