@@ -159,7 +159,7 @@ const portfolioData: PortfolioData = {
       category: "Languages & Frameworks",
       skills: [
         { name: "React", proficiency: 95 },
-        { name: "TypeScript", proficiency: 40 },
+        { name: "TypeScript", proficiency: 70 },
         { name: "Next.js", proficiency: 80 },
         { name: "Tailwind CSS", proficiency: 97 },
         { name: "JavaScript (ES6+)", proficiency: 92 },

@@ -63,11 +63,11 @@ export function Hero({ data }: HeroProps) {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Button
             onClick={() => scrollToSection('portfolio')}
             size="lg"
-            className="bg-primary hover:bg-primary/80 text-white"
+            className="bg-primary hover:bg-primary/80 text-white cursor-pointer transition-colors duration-300"
           >
             View My Work
           </Button>
@@ -76,7 +76,7 @@ export function Hero({ data }: HeroProps) {
               onClick={downloadResume}
               variant="outline"
               size="lg"
-              className="border-accent text-accent hover:bg-accent/10"
+              className="border-accent text-accent hover:bg-accent/10 cursor-pointer transition-colors duration-300"
             >
               Download My Resume
             </Button>
@@ -84,7 +84,7 @@ export function Hero({ data }: HeroProps) {
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex justify-center gap-4 mb-20">
           {data.personalInfo.socialLinks.map((link) => (
             <a
               key={link.id}
@@ -101,7 +101,7 @@ export function Hero({ data }: HeroProps) {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
         <button
           onClick={() => scrollToSection('about')}
           className="flex flex-col items-center text-accent hover:text-primary transition-colors animate-bounce"
