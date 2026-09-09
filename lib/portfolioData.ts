@@ -153,14 +153,34 @@ const portfolioData: PortfolioData = {
       description: "Funform is a platform that enables seamless loan applications with dynamic, multi-step forms and real-time validation. The team focuses on streamlining user input and improving platform performance. I played a role in reducing form abandonment by 25% and optimizing rendering performance, resulting in a 40% decrease in unnecessary re-renders.",
       technologies: ["JavaScript", "React", "Tailwind CSS", "Git & GitHub", "Context API"],
     },
+    {
+      id: 4,
+      company: "DeliverNow",
+      position: "Frontend Developer",
+      duration: "May 2026 - Present",
+      description: "DeliverNow is a mineral traceability and compliance platform built for the DRC mining sector, enabling real-time oversight of artisanal miners, transport logistics, quarantine workflows, batch/lot management, and regulatory audit trails across multiple government institutions (SAEMAPE, CEEC). The platform handles sensitive operational data across provinces and requires strict role-based access, multilingual support, and high data integrity standards. I was responsible for architecting and implementing the frontend data layer, standardizing pagination across the entire codebase, building reusable table and UI components, and ensuring the platform scaled cleanly across desktop and mobile.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "i18next / react-i18next",
+        "React Router",
+        "Axios",
+        "Lucide React",
+        "Git & GitHub",
+        "REST APIs",
+        "Custom Hooks",
+      ],
+    }
   ],
   skills: [
     {
       category: "Languages & Frameworks",
       skills: [
         { name: "React", proficiency: 95 },
-        { name: "TypeScript", proficiency: 70 },
-        { name: "Next.js", proficiency: 80 },
+        { name: "React Native", proficiency: 75 },
+        { name: "TypeScript", proficiency: 80 },
+        { name: "Next.js", proficiency: 85 },
         { name: "Tailwind CSS", proficiency: 97 },
         { name: "JavaScript (ES6+)", proficiency: 92 },
       ],

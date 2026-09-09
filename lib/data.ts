@@ -14,7 +14,7 @@ export const profileData = {
 export const skills = [
   {
     category: "Languages & Frameworks",
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", " JavaScript (ES6+)"],
+    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", " JavaScript (ES6+)", "React Native"],
   },
   {
     category: "State & Data",
