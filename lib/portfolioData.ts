@@ -131,30 +131,6 @@ const portfolioData: PortfolioData = {
   experience: [
     {
       id: 1,
-      company: "Wudify Africa",
-      position: "Frontend Developer",
-      duration: "2025 - Present",
-      description: "Wudify is an e-commerce platform focused on providing role-based solutions for customers, vendors, and admins. The team develops secure, scalable web applications, optimizing user experience and transaction reliability. I’ve contributed by improving navigation efficiency by 40%, reducing unauthorized access by 95%, and ensuring 99% payment reliability with Paystack integration.",
-      technologies: ["React", "Tailwind CSS", "JavaScript", "Redux Toolkit", "Context API", "React Query", "OAuth 2.0 / JWT", "Paystack Integration"],
-    },
-    {
-      id: 2,
-      company: "Kinel Academy",
-      position: "Frontend Developer Intern",
-      duration: "2024 - 2025",
-      description: "Kinel Academy is an edu-tech platform that empowers students to learn key tech stacks like Frontend Development, Backend Development, Data Analysis, Product Management, UI/UX Design and more. The team builds interactive learning environments that facilitate real-time knowledge transfer. I helped improve performance, enhancing LCP by 38% and TTI by 30%, while also implementing caching solutions to reduce API calls by 60%.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Git & GitHub", "Context API", "Blusalt Payment Integration"],
-    },
-    {
-      id: 3,
-      company: "Fundform Capital",
-      position: "Frontend Developer Intern",
-      duration: "2024",
-      description: "Funform is a platform that enables seamless loan applications with dynamic, multi-step forms and real-time validation. The team focuses on streamlining user input and improving platform performance. I played a role in reducing form abandonment by 25% and optimizing rendering performance, resulting in a 40% decrease in unnecessary re-renders.",
-      technologies: ["JavaScript", "React", "Tailwind CSS", "Git & GitHub", "Context API"],
-    },
-    {
-      id: 4,
       company: "DeliverNow",
       position: "Frontend Developer",
       duration: "May 2026 - Present",
@@ -171,7 +147,31 @@ const portfolioData: PortfolioData = {
         "REST APIs",
         "Custom Hooks",
       ],
-    }
+    },
+    {
+      id: 2,
+      company: "Wudify Africa",
+      position: "Frontend Developer",
+      duration: "2025 - 2026",
+      description: "Wudify is an e-commerce platform focused on providing role-based solutions for customers, vendors, and admins. The team develops secure, scalable web applications, optimizing user experience and transaction reliability. I’ve contributed by improving navigation efficiency by 40%, reducing unauthorized access by 95%, and ensuring 99% payment reliability with Paystack integration.",
+      technologies: ["React", "Tailwind CSS", "JavaScript", "Redux Toolkit", "Context API", "React Query", "OAuth 2.0 / JWT", "Paystack Integration"],
+    },
+    {
+      id: 3,
+      company: "Kinel Academy",
+      position: "Frontend Developer Intern",
+      duration: "2024 - 2025",
+      description: "Kinel Academy is an edu-tech platform that empowers students to learn key tech stacks like Frontend Development, Backend Development, Data Analysis, Product Management, UI/UX Design and more. The team builds interactive learning environments that facilitate real-time knowledge transfer. I helped improve performance, enhancing LCP by 38% and TTI by 30%, while also implementing caching solutions to reduce API calls by 60%.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Git & GitHub", "Context API", "Blusalt Payment Integration"],
+    },
+    {
+      id: 4,
+      company: "Fundform Capital",
+      position: "Frontend Developer Intern",
+      duration: "2024",
+      description: "Funform is a platform that enables seamless loan applications with dynamic, multi-step forms and real-time validation. The team focuses on streamlining user input and improving platform performance. I played a role in reducing form abandonment by 25% and optimizing rendering performance, resulting in a 40% decrease in unnecessary re-renders.",
+      technologies: ["JavaScript", "React", "Tailwind CSS", "Git & GitHub", "Context API"],
+    },
   ],
   skills: [
     {
