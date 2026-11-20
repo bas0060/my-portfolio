@@ -81,7 +81,7 @@ const portfolioData: PortfolioData = {
     email: "adelekemakinde64@gmail.com",
     phone: "+234 701 078 7117",
     location: "Lagos, Nigeria",
-    bio: "Driven by a passion for crafting beautiful and high-performance web experiences, I bring 3+ years of hands-on experience with React, Node.js, and the latest web technologies.",
+    bio: "Driven by a passion for crafting beautiful and high-performance web experiences, I bring 3+ years of hands-on experience with React, Next.js, React Native, Node.js, and the latest web technologies.",
     socialLinks: [
       {
         id: 1,
