@@ -1,6 +1,6 @@
 export const profileData = {
   name: "Abdulbasit Makinde",
-  title: "Frontend Developer",
+  title: "Software Developer",
   bio: "Passionate about building accessible, performant web experiences with modern React and TypeScript.",
   email: "adelekemakinde64@gmail.com",
   location: "Lagos, Nigeria",
@@ -17,8 +17,16 @@ export const skills = [
     skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", " JavaScript (ES6+)", "React Native"],
   },
   {
+    category: "Backend & Databases",
+    skills: ["Node.js", "Express.js", "PostgreSQL", "MongoDB / Mongoose", "REST API Design"],
+  },
+  {
     category: "State & Data",
     skills: ["Redux Toolkit", "React Query", "RESTful APIs / Axios", "Context API"],
+  },
+  {
+    category: "Cloud & DevOps",
+    skills: ["AWS (EC2, S3)", "Azure (App Service)", "Docker", "CI/CD (GitHub Actions)"],
   },
   {
     category: "Performance & Tooling",
