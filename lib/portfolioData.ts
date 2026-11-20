@@ -6,6 +6,7 @@ import Ecommerce from '@/public/velora-Ecommerce.png'
 import weather from '@/public/weather-checking-application.png'
 import kredgift from '@/public/kredgift-hero-section.png'
 import checkslate from '@/public/checkslate-hero-section.png'
+import { skills } from './data';
 
 
 export interface PortfolioData {
@@ -76,9 +77,9 @@ export interface PortfolioData {
 const portfolioData: PortfolioData = {
   personalInfo: {
     name: "Abdulbasit Makinde",
-    role: "Frontend Developer",
+    role: "Software Developer",
     email: "adelekemakinde64@gmail.com",
-    phone: "+234 906 402 8886",
+    phone: "+234 701 078 7117",
     location: "Lagos, Nigeria",
     bio: "Driven by a passion for crafting beautiful and high-performance web experiences, I bring 3+ years of hands-on experience with React, Node.js, and the latest web technologies.",
     socialLinks: [
@@ -108,8 +109,8 @@ const portfolioData: PortfolioData = {
       },
     ],
   },
-  about: "I'm a passionate Frontend Developer with over 3 years of experience building beautiful, performant web applications. I specialize in implementing responsive, user-friendly interfaces that prioritize performance and accessibility. With a strong foundation in JavaScript and a keen eye for design, I’m dedicated to creating seamless digital experiences that delight users and drive business success. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
-  // about: "I'm a passionate Frontend Developer with over 5 years of experience building beautiful, performant web applications. Specializing in React, TypeScript, and modern web technologies, I focus on creating seamless user experiences and writing clean, maintainable code. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
+  about: "I'm a passionate Software Developer with over 3 years of experience building beautiful, performant web applications. I specialize in implementing responsive, user-friendly interfaces that prioritize performance and accessibility. With a strong foundation in JavaScript and a keen eye for design, I’m dedicated to creating seamless digital experiences that delight users and drive business success. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
+  // about: "I'm a passionate Software Developer with over 5 years of experience building beautiful, performant web applications. Specializing in React, TypeScript, and modern web technologies, I focus on creating seamless user experiences and writing clean, maintainable code. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
   education: [
     {
       id: 1,
@@ -133,7 +134,7 @@ const portfolioData: PortfolioData = {
       id: 1,
       company: "DeliverNow",
       position: "Frontend Developer",
-      duration: "May 2026 - Present",
+      duration: "May 2026 - Nov 2026",
       description: "DeliverNow is a mineral traceability and compliance platform built for the DRC mining sector, enabling real-time oversight of artisanal miners, transport logistics, quarantine workflows, batch/lot management, and regulatory audit trails across multiple government institutions (SAEMAPE, CEEC). The platform handles sensitive operational data across provinces and requires strict role-based access, multilingual support, and high data integrity standards. I was responsible for architecting and implementing the frontend data layer, standardizing pagination across the entire codebase, building reusable table and UI components, and ensuring the platform scaled cleanly across desktop and mobile.",
       technologies: [
         "React",
@@ -159,7 +160,7 @@ const portfolioData: PortfolioData = {
     {
       id: 3,
       company: "Kinel Academy",
-      position: "Frontend Developer Intern",
+      position: "Frontend Developer",
       duration: "2024 - 2025",
       description: "Kinel Academy is an edu-tech platform that empowers students to learn key tech stacks like Frontend Development, Backend Development, Data Analysis, Product Management, UI/UX Design and more. The team builds interactive learning environments that facilitate real-time knowledge transfer. I helped improve performance, enhancing LCP by 38% and TTI by 30%, while also implementing caching solutions to reduce API calls by 60%.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Git & GitHub", "Context API", "Blusalt Payment Integration"],
@@ -184,6 +185,16 @@ const portfolioData: PortfolioData = {
         { name: "Tailwind CSS", proficiency: 97 },
         { name: "JavaScript (ES6+)", proficiency: 92 },
       ],
+    }, 
+    {
+      category: "Backend & Databases",
+      skills: [
+        { name: "Node.js", proficiency: 85 },
+        { name: "Express.js", proficiency: 85 },
+        { name: "PostgreSQL", proficiency: 85 },
+        { name: "MongoDB / Mongoose", proficiency: 85 },
+        { name: "REST API Design", proficiency: 90 },
+      ],
     },
     {
       category: "State & Data",
@@ -192,6 +203,15 @@ const portfolioData: PortfolioData = {
         { name: "React Query", proficiency: 90 },
         { name: "RESTful APIs / Axios", proficiency: 90 },
         { name: "Context API", proficiency: 92 },
+      ],
+    }, 
+    {
+      category: "Cloud & DevOps",
+      skills: [
+        { name: "AWS (EC2, S3)", proficiency: 70 },
+        { name: "Azure (App Service)", proficiency: 70 },
+        { name: "Docker", proficiency: 70 },
+        { name: "CI/CD (GitHub Actions)", proficiency: 92 },
       ],
     },
     {
@@ -289,7 +309,7 @@ const portfolioData: PortfolioData = {
   contact: {
     message: "I'm always interested in hearing about new projects and opportunities. Feel free to get in touch!",
     email: "adelekemakinde64@gmail.com",
-    phone: "+234 906 402 8886",
+    phone: "+234 701 078 7117",
   },
 };
 
