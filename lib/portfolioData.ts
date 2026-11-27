@@ -1,13 +1,9 @@
-
-
-
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
-import Ecommerce from '@/public/velora-Ecommerce.png'
-import weather from '@/public/weather-checking-application.png'
-import kredgift from '@/public/kredgift-hero-section.png'
-import checkslate from '@/public/checkslate-hero-section.png'
-import { skills } from './data';
-
+import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import Ecommerce from "@/public/velora-Ecommerce.png";
+import weather from "@/public/weather-checking-application.png";
+import kredgift from "@/public/kredgift-hero-section.png";
+import checkslate from "@/public/checkslate-hero-section.png";
+import { skills } from "./data";
 
 export interface PortfolioData {
   personalInfo: {
@@ -109,7 +105,8 @@ const portfolioData: PortfolioData = {
       },
     ],
   },
-  about: "I'm a passionate Software Developer with over 3 years of experience building beautiful, performant web applications. I specialize in implementing responsive, user-friendly interfaces that prioritize performance and accessibility. With a strong foundation in JavaScript and a keen eye for design, I’m dedicated to creating seamless digital experiences that delight users and drive business success. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
+  about:
+    "I'm a passionate Software Developer with over 3 years of experience building beautiful, performant web applications. I specialize in implementing responsive, user-friendly interfaces that prioritize performance and accessibility. With a strong foundation in JavaScript and a keen eye for design, I’m dedicated to creating seamless digital experiences that delight users and drive business success. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
   // about: "I'm a passionate Software Developer with over 5 years of experience building beautiful, performant web applications. Specializing in React, TypeScript, and modern web technologies, I focus on creating seamless user experiences and writing clean, maintainable code. I have a proven track record of delivering impactful projects that drive business growth and user engagement, and I'm committed to continuously improving my skills to stay at the forefront of web development.",
   education: [
     {
@@ -132,10 +129,36 @@ const portfolioData: PortfolioData = {
   experience: [
     {
       id: 1,
+      company: "Kinel Academy",
+      position: "Fullstack Developer",
+      duration: "Jun 2026 - Nov 2026",
+      description:
+        "Kinel Academy is a cohort-based tech education platform offering a 13-program catalog across frontend, backend, mobile, design, data, product and more, with a public marketing site and a separate student portal serving 1,000+ users. The platform handles course enrollment and payments, student accounts, media-rich course content and an internal admin portal, so it needs secure authentication, tight role-based access, fast API responses and strong search visibility. I worked across both ends of the stack: building the Next.js and React public site, implementing JWT authentication and a role-based access control system for Super Admin, Admin, Operations Manager and Social Media Manager roles, adding IP-based rate limiting and Redis caching on the API, integrating the Blusalt payment gateway through webhooks so students can buy courses and get access once payment is confirmed, and handling multipart uploads to Cloudinary for course and profile media. I also improved performance and discoverability with WebP-optimized images, React Query caching and page-level SEO metadata with Open Graph and Twitter share cards, lowering LCP by 38%, TTI by 30% and redundant API calls by 60%.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Node.js",
+        "Express",
+        "JWT Authentication",
+        "Role-Based Access Control (RBAC)",
+        "Redis",
+        "Blusalt Payment Gateway",
+        "Webhooks",
+        "Cloudinary",
+        "Multipart Uploads",
+        "React Query",
+        "SEO & Open Graph",
+        "REST APIs",
+        "Git & GitHub",
+      ],
+    },
+    {
+      id: 2,
       company: "DeliverNow",
       position: "Frontend Developer",
-      duration: "May 2026 - Nov 2026",
-      description: "DeliverNow is a mineral traceability and compliance platform built for the DRC mining sector, enabling real-time oversight of artisanal miners, transport logistics, quarantine workflows, batch/lot management, and regulatory audit trails across multiple government institutions (SAEMAPE, CEEC). The platform handles sensitive operational data across provinces and requires strict role-based access, multilingual support, and high data integrity standards. I was responsible for architecting and implementing the frontend data layer, standardizing pagination across the entire codebase, building reusable table and UI components, and ensuring the platform scaled cleanly across desktop and mobile.",
+      duration: "Apr 2026 - Oct 2026",
+      description:
+        "DeliverNow is a mineral traceability and compliance platform built for the DRC mining sector, enabling real-time oversight of artisanal miners, transport logistics, quarantine workflows, batch/lot management, and regulatory audit trails across multiple government institutions (SAEMAPE, CEEC). The platform handles sensitive operational data across provinces and requires strict role-based access, multilingual support, and high data integrity standards. I was responsible for architecting and implementing the frontend data layer, standardizing pagination across the entire codebase, building reusable table and UI components, and ensuring the platform scaled cleanly across desktop and mobile.",
       technologies: [
         "React",
         "TypeScript",
@@ -150,28 +173,38 @@ const portfolioData: PortfolioData = {
       ],
     },
     {
-      id: 2,
+      id: 3,
       company: "Wudify Africa",
       position: "Frontend Developer",
       duration: "2025 - 2026",
-      description: "Wudify is an e-commerce platform focused on providing role-based solutions for customers, vendors, and admins. The team develops secure, scalable web applications, optimizing user experience and transaction reliability. I’ve contributed by improving navigation efficiency by 40%, reducing unauthorized access by 95%, and ensuring 99% payment reliability with Paystack integration.",
-      technologies: ["React", "Tailwind CSS", "JavaScript", "Redux Toolkit", "Context API", "React Query", "OAuth 2.0 / JWT", "Paystack Integration"],
+      description:
+        "Wudify is an e-commerce platform focused on providing role-based solutions for customers, vendors, and admins. The team develops secure, scalable web applications, optimizing user experience and transaction reliability. I’ve contributed by improving navigation efficiency by 40%, reducing unauthorized access by 95%, and ensuring 99% payment reliability with Paystack integration.",
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "Redux Toolkit",
+        "Context API",
+        "React Query",
+        "OAuth 2.0 / JWT",
+        "Paystack Integration",
+      ],
     },
     {
       id: 3,
       company: "Kinel Academy",
       position: "Frontend Developer",
       duration: "2024 - 2025",
-      description: "Kinel Academy is an edu-tech platform that empowers students to learn key tech stacks like Frontend Development, Backend Development, Data Analysis, Product Management, UI/UX Design and more. The team builds interactive learning environments that facilitate real-time knowledge transfer. I helped improve performance, enhancing LCP by 38% and TTI by 30%, while also implementing caching solutions to reduce API calls by 60%.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Git & GitHub", "Context API", "Blusalt Payment Integration"],
-    },
-    {
-      id: 4,
-      company: "Fundform Capital",
-      position: "Frontend Developer Intern",
-      duration: "2024",
-      description: "Funform is a platform that enables seamless loan applications with dynamic, multi-step forms and real-time validation. The team focuses on streamlining user input and improving platform performance. I played a role in reducing form abandonment by 25% and optimizing rendering performance, resulting in a 40% decrease in unnecessary re-renders.",
-      technologies: ["JavaScript", "React", "Tailwind CSS", "Git & GitHub", "Context API"],
+      description:
+        "Kinel Academy is an edu-tech platform that empowers students to learn key tech stacks like Frontend Development, Backend Development, Data Analysis, Product Management, UI/UX Design and more. The team builds interactive learning environments that facilitate real-time knowledge transfer. I helped improve performance, enhancing LCP by 38% and TTI by 30%, while also implementing caching solutions to reduce API calls by 60%.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Git & GitHub",
+        "Context API",
+        "Blusalt Payment Integration",
+      ],
     },
   ],
   skills: [
@@ -185,7 +218,7 @@ const portfolioData: PortfolioData = {
         { name: "Tailwind CSS", proficiency: 97 },
         { name: "JavaScript (ES6+)", proficiency: 92 },
       ],
-    }, 
+    },
     {
       category: "Backend & Databases",
       skills: [
@@ -204,7 +237,7 @@ const portfolioData: PortfolioData = {
         { name: "RESTful APIs / Axios", proficiency: 90 },
         { name: "Context API", proficiency: 92 },
       ],
-    }, 
+    },
     {
       category: "Cloud & DevOps",
       skills: [
@@ -241,9 +274,18 @@ const portfolioData: PortfolioData = {
     {
       id: 1,
       name: "E-Commerce Platform",
-      description: "A full-stack shopping application built with React and TypeScript, integrated with RESTful APIs. The platform features a dynamic product catalog, wishlist, cart, and checkout system integrated with Paystack for secure payments. Customers can track their order history, improving user experience by enabling smooth navigation through a variety of e-commerce functionalities. The app ensures secure transactions and provides a seamless shopping experience.",
+      description:
+        "A full-stack shopping application built with React and TypeScript, integrated with RESTful APIs. The platform features a dynamic product catalog, wishlist, cart, and checkout system integrated with Paystack for secure payments. Customers can track their order history, improving user experience by enabling smooth navigation through a variety of e-commerce functionalities. The app ensures secure transactions and provides a seamless shopping experience.",
       image: Ecommerce,
-      technologies: ["React", "Tailwind CSS", "JavaScript", "Context API", "React Query", "OAuth 2.0 / JWT", "Paystack Integration"],
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "Context API",
+        "React Query",
+        "OAuth 2.0 / JWT",
+        "Paystack Integration",
+      ],
       links: {
         github: "https://github.com/bas0060/Velora-E-commerce",
         live: "https://velora-e-commerce.pages.dev",
@@ -252,9 +294,17 @@ const portfolioData: PortfolioData = {
     {
       id: 2,
       name: "Weather Checker",
-      description: "A React-based weather application that leverages the OpenWeather API to provide real-time weather updates. It features geolocation support, a 5-day forecast, and dynamic icons that visually represent the weather conditions. The app also caches weather data locally for faster retrieval on subsequent visits, improving the overall user experience and responsiveness.",
+      description:
+        "A React-based weather application that leverages the OpenWeather API to provide real-time weather updates. It features geolocation support, a 5-day forecast, and dynamic icons that visually represent the weather conditions. The app also caches weather data locally for faster retrieval on subsequent visits, improving the overall user experience and responsiveness.",
       image: weather,
-      technologies: ["React", "JavaScript", "OpenAI API", "Tailwind CSS", "Git & GitHub", "Context API"],
+      technologies: [
+        "React",
+        "JavaScript",
+        "OpenAI API",
+        "Tailwind CSS",
+        "Git & GitHub",
+        "Context API",
+      ],
       links: {
         github: "https://github.com/bas0060/weather-app",
         live: "https://weather-checking-app.pages.dev/",
@@ -263,9 +313,16 @@ const portfolioData: PortfolioData = {
     {
       id: 3,
       name: "checkslate",
-      description: "A two-sided marketplace designed for customers and service providers, built with React. This platform enables users to book and schedule services with ease, while providing service providers with comprehensive dashboards to manage their schedules, clients, and earnings. It ensures both parties enjoy a smooth, user-friendly experience, allowing for easy interactions and bookings.",
+      description:
+        "A two-sided marketplace designed for customers and service providers, built with React. This platform enables users to book and schedule services with ease, while providing service providers with comprehensive dashboards to manage their schedules, clients, and earnings. It ensures both parties enjoy a smooth, user-friendly experience, allowing for easy interactions and bookings.",
       image: checkslate,
-      technologies: ["Git & GitHub", "RESTful APIs / Axios ", "JavaScript", "React", "Tailwind CSS",],
+      technologies: [
+        "Git & GitHub",
+        "RESTful APIs / Axios ",
+        "JavaScript",
+        "React",
+        "Tailwind CSS",
+      ],
       links: {
         github: "https://github.com/Aarif195/Checkslate/",
         live: "https://checkslate-project.netlify.app/",
@@ -274,9 +331,16 @@ const portfolioData: PortfolioData = {
     {
       id: 4,
       name: "Giftcard Trading Platform",
-      description: "A platform for buying, selling, and trading gift cards, with secure user authentication, real-time transaction processing, and efficient user dashboards for tracking trade history. Integrated with payment gateways for secure financial transactions, this platform aims to create a trusted marketplace for gift card trading with seamless user experience and robust security.",
+      description:
+        "A platform for buying, selling, and trading gift cards, with secure user authentication, real-time transaction processing, and efficient user dashboards for tracking trade history. Integrated with payment gateways for secure financial transactions, this platform aims to create a trusted marketplace for gift card trading with seamless user experience and robust security.",
       image: kredgift,
-      technologies: ["JavaScript", "React", "Tailwind CSS", "Git & GitHub", "RESTful APIs / Axios "],
+      technologies: [
+        "JavaScript",
+        "React",
+        "Tailwind CSS",
+        "Git & GitHub",
+        "RESTful APIs / Axios ",
+      ],
       links: {
         github: "https://github.com/KredGift01/kredgift-frontend/",
         live: "https://kredgift-frontend.onrender.com",
@@ -289,25 +353,29 @@ const portfolioData: PortfolioData = {
       author: "Olabisi Kolawole",
       role: "Product Manager",
       company: "Wudify Africa",
-      message: "Abdulbasit is an exceptional developer who consistently delivers high-quality code. His attention to detail and problem-solving skills are outstanding. He is a great team player and always willing to go the extra mile to ensure project success. I highly recommend him for any frontend development role.",
+      message:
+        "Abdulbasit is an exceptional developer who consistently delivers high-quality code. His attention to detail and problem-solving skills are outstanding. He is a great team player and always willing to go the extra mile to ensure project success. I highly recommend him for any frontend development role.",
     },
     {
       id: 2,
       author: "Sokariba Lawson",
       role: "Product Owner & Program Lead",
       company: "Fundform Capital",
-      message: "Abdulbasit demonstrated an outstanding technical ability, creativity, and commitment in building the user-facing and admin side of a fintech MVP. Specifically, he Led the frontend architecture and implemented core user interfaces and functionalities. He also Collaborated with designers and backend engineers to ensure seamless integration and responsiveness.",
+      message:
+        "Abdulbasit demonstrated an outstanding technical ability, creativity, and commitment in building the user-facing and admin side of a fintech MVP. Specifically, he Led the frontend architecture and implemented core user interfaces and functionalities. He also Collaborated with designers and backend engineers to ensure seamless integration and responsiveness.",
     },
     {
       id: 3,
       author: "Ridwan Makinde",
       role: "CTO",
       company: "Kinel Academy",
-      message: "Working with Abdulbasit was a game-changer for our project. His expertise in full-stack development and mentoring abilities are invaluable. Makinde has proven to be a reliable team player with a strong technical foundation and problem-solving mindset. I strongly recommend him for opportunities in Frontend Development, and I’m confident they will thrive in any engineering team.",
+      message:
+        "Working with Abdulbasit was a game-changer for our project. His expertise in full-stack development and mentoring abilities are invaluable. Makinde has proven to be a reliable team player with a strong technical foundation and problem-solving mindset. I strongly recommend him for opportunities in Frontend Development, and I’m confident they will thrive in any engineering team.",
     },
   ],
   contact: {
-    message: "I'm always interested in hearing about new projects and opportunities. Feel free to get in touch!",
+    message:
+      "I'm always interested in hearing about new projects and opportunities. Feel free to get in touch!",
     email: "adelekemakinde64@gmail.com",
     phone: "+234 701 078 7117",
   },
